@@ -534,3 +534,6 @@ hal_client_domain(mtk_hal_camera, hal_audio)
 
 # /sys/bus/nvmem/devices/mtk-devinfo0/nvmem access
 allow mtk_hal_camera sysfs_nvmem:file r_file_perms;
+
+# fpsgo
+rw_dir_file(mtk_hal_camera, sysfs_fpsgo)
